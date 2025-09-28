@@ -1,0 +1,444 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "hash_code": "ADMIN9999RSX",
+      "balance": 19558,
+      "created_at": "2025-09-23T08:05:00.000000"
+    },
+    {
+      "id": 2,
+      "name": "Swagy cyber",
+      "hash_code": "TAM7H0659Z72",
+      "balance": 0,
+      "created_at": "2025-09-23T09:03:40.274525"
+    },
+    {
+      "id": 3,
+      "name": "Anand",
+      "hash_code": "8XBPHNNRZVMA",
+      "balance": 0,
+      "created_at": "2025-09-24T07:07:41.088961"
+    },
+    {
+      "id": 4,
+      "name": "Shaurya",
+      "hash_code": "N19CYJUGPWSR",
+      "balance": 0,
+      "created_at": "2025-09-25T03:44:13.446621"
+    },
+    {
+      "id": 5,
+      "name": "Omkar patil",
+      "hash_code": "H4I7USK9346X",
+      "balance": 0,
+      "created_at": "2025-09-25T08:36:56.181931"
+    },
+    {
+      "id": 6,
+      "name": "Donboy",
+      "hash_code": "ITQQ0NFIDH9D",
+      "balance": 0,
+      "created_at": "2025-09-25T09:49:26.599681"
+    },
+    {
+      "id": 7,
+      "name": "Beast",
+      "hash_code": "BNHEMIFVN7YD",
+      "balance": 0,
+      "created_at": "2025-09-25T13:41:42.511649"
+    },
+    {
+      "id": 8,
+      "name": "Hello",
+      "hash_code": "F3O35JGWZ2LS",
+      "balance": 0,
+      "created_at": "2025-09-26T04:21:57.791421"
+    },
+    {
+      "id": 9,
+      "name": "Rahul",
+      "hash_code": "HYR90EXR8FKO",
+      "balance": 15,
+      "created_at": "2025-09-26T04:22:26.531385"
+    },
+    {
+      "id": 10,
+      "name": "may",
+      "hash_code": "EIG83869ITKM",
+      "balance": 0,
+      "created_at": "2025-09-26T04:49:07.864352"
+    },
+    {
+      "id": 11,
+      "name": "gagshd",
+      "hash_code": "6UMUSXQH7VPQ",
+      "balance": 0,
+      "created_at": "2025-09-26T11:47:38.840273"
+    },
+    {
+      "id": 12,
+      "name": "@ar_er64",
+      "hash_code": "MV0ZGWW1BSVJ",
+      "balance": 0,
+      "created_at": "2025-09-26T11:48:18.700771"
+    },
+    {
+      "id": 13,
+      "name": "iduxdu",
+      "hash_code": "DS8TDQ2X9YJZ",
+      "balance": 0,
+      "created_at": "2025-09-26T11:48:34.514375"
+    },
+    {
+      "id": 14,
+      "name": "@oedifuw",
+      "hash_code": "NXNVM4PFSDA0",
+      "balance": 0,
+      "created_at": "2025-09-26T11:48:41.437949"
+    },
+    {
+      "id": 15,
+      "name": "hackerrat11",
+      "hash_code": "F3SR5TX6EXXK",
+      "balance": 0,
+      "created_at": "2025-09-26T11:48:45.285043"
+    },
+    {
+      "id": 16,
+      "name": "@oedifuw",
+      "hash_code": "UUQ8DM8G4REL",
+      "balance": 0,
+      "created_at": "2025-09-26T11:49:13.352550"
+    },
+    {
+      "id": 17,
+      "name": "Kizagan",
+      "hash_code": "44RI960R42UZ",
+      "balance": 0,
+      "created_at": "2025-09-26T11:52:24.236931"
+    },
+    {
+      "id": 18,
+      "name": "bgmiboyop",
+      "hash_code": "DCV5DK5OJYIJ",
+      "balance": 0,
+      "created_at": "2025-09-26T15:04:08.626237"
+    },
+    {
+      "id": 19,
+      "name": "Hi",
+      "hash_code": "E80I55X4T5AX",
+      "balance": 0,
+      "created_at": "2025-09-27T05:48:53.019249"
+    },
+    {
+      "id": 22,
+      "name": "Raj",
+      "hash_code": "SX3B3EY29WTG",
+      "balance": 0,
+      "created_at": "2025-09-27T06:04:25.468469"
+    },
+    {
+      "id": 23,
+      "name": "Raj",
+      "hash_code": "HYQPDY82E74W",
+      "balance": 0,
+      "created_at": "2025-09-27T06:05:49.452501"
+    },
+    {
+      "id": 24,
+      "name": "raj",
+      "hash_code": "Q3OHTA58OKTR",
+      "balance": 0,
+      "created_at": "2025-09-27T06:14:24.106473"
+    },
+    {
+      "id": 25,
+      "name": "Prashu",
+      "hash_code": "KQ8R9KILOGJS",
+      "balance": 0,
+      "created_at": "2025-09-27T10:50:25.685188"
+    },
+    {
+      "id": 26,
+      "name": "Saeed",
+      "hash_code": "TWL842ETINQI",
+      "balance": 0,
+      "created_at": "2025-09-27T14:12:42.042527"
+    },
+    {
+      "id": 27,
+      "name": "Kora",
+      "hash_code": "9BZRO5XDKZVL",
+      "balance": 0,
+      "created_at": "2025-09-27T15:14:22.473932"
+    },
+    {
+      "id": 29,
+      "name": "Sk",
+      "hash_code": "GQD7UYUMQCDJ",
+      "balance": 0,
+      "created_at": "2025-09-27T16:23:29.233470"
+    },
+    {
+      "id": 30,
+      "name": "test",
+      "hash_code": "DKIWG3NRVOQB",
+      "balance": 0,
+      "created_at": "2025-09-27T16:29:34.667103"
+    }
+  ],
+  "demo_usernames": [
+    {
+      "id": 1,
+      "username": "riyakhanna1",
+      "mobile_number": "7091729147",
+      "mobile_details": {
+        "full_name": "\ud83d\udc64 Sattar shah",
+        "father_name": "\ud83d\udc68 Ramtula Shah",
+        "document_number": "\ud83c\udccf 275339966355",
+        "region": "\ud83d\uddfa\ufe0f VODA BHR&JHR;BIHAR JIO;AIRTEL BHR&JHR;BIHAR VODAFONE",
+        "addresses": [
+          "\ud83c\udfd8\ufe0f S/O Sattar Shah,-,CHHOTI KABRISTAN Bettiah,INDRA CHOWK,Bettiah Bettiah,West Champaran, Bihar,845438",
+          "\ud83c\udfd8\ufe0f choti,CHHOTI KABRISTAN INDRA CHOWK,BETTIAH BETTIAH ward no 14,ward no 14,BETTIAH BETTIAH WEST CHAMPARAN,BETTIAH,WEST CHAMPARAN,BIHAR,845438"
+        ],
+        "phone_numbers": [
+          "\ud83d\udcde 918207426355",
+          "\ud83d\udcde 917903028438",
+          "\ud83d\udcde 918864033507",
+          "\ud83d\udcde 919065717472",
+          "\ud83d\udcde 917091729147"
+        ]
+      },
+      "active": true,
+      "created_at": "2025-09-23T08:05:00.000000"
+    },
+    {
+      "id": 2,
+      "username": "sr_cheat_hack",
+      "mobile_number": "7970421286",
+      "mobile_details": {
+        "full_name": "\ud83d\udc64 Hari Prasan Ram",
+        "father_name": "\ud83d\udc68 Shiv Kumar Ram",
+        "document_number": "\ud83c\udccf 661024605582",
+        "region": "\ud83d\uddfa\ufe0f BIHAR JIO;AIRTEL BHR&JHR;JIO BHR&JHR",
+        "addresses": [
+          "\ud83c\udfd8\ufe0f 22 village bisi kalan dinara district rohtas,Nawanagar PO,buxar,post office-bisi kalan Nawanagar,Nawanagar,Bhojpur,Buxar,Bihar,802129",
+          "\ud83c\udfd8\ufe0f S/O Hari Prasan Ram,village-bisi kalan village-bisi kalandinara district-rohtas Nawanagar,NA,post office-bisi kalan,Nawanagar Nawanagar Buxar,NA,Bihar,802129"
+        ],
+        "phone_numbers": [
+          "\ud83d\udcde 918607096821",
+          "\ud83d\udcde 919113198403",
+          "\ud83d\udcde 919693442577",
+          "\ud83d\udcde 917497099699",
+          "\ud83d\udcde 917970421286"
+        ]
+      },
+      "active": true,
+      "created_at": "2025-09-23T08:05:00.000000"
+    },
+    {
+      "id": 3,
+      "username": "Snow_Calfornia",
+      "mobile_number": "9913756703",
+      "mobile_details": {
+        "full_name": "\ud83d\udcdeTelephone:  919327879015\n\ud83d\udcdeTelephone:  917016679393\n\ud83d\udcdeTelephone:  919099878432\n\ud83d\udcdeTelephone:  919913756703\n\ud83c\udfd8\ufe0fAdres:  Gajanvav,Surendra Nagar,Surendra Nagar,Gajanvav Surendra Nagar,DHRANGADHRA,Surendra Nagar,Gujarat,363310\n\ud83c\udccfDocument number:  495036249515\n\ud83d\udc64Full name:  Hemubhai Chavda \n\ud83d\udc68The name of the father:  Chavda Jayantibhai Hemubhai\n\ud83d\uddfa\ufe0f Region:  JIO GUJARAT;VI GUJARAT",
+        "father_name": "",
+        "document_number": "",
+        "region": "",
+        "addresses": [],
+        "phone_numbers": []
+      },
+      "active": true,
+      "created_at": "2025-09-23T08:40:05.664882"
+    },
+    {
+      "id": 4,
+      "username": "Pi",
+      "mobile_number": "919650698970",
+      "mobile_details": "\ud83d\udcdeTelephone: 919650698970 \ud83c\udfd8\ufe0fAdres: 80/5-A,Block 80,Na,Malviya Nagar Delhi,New Delhi,South Delhi,Delhi,110017 \ud83c\udccfDocument number: TZD0880781 \ud83d\udc64Full name: Jogendra Harjai \ud83d\udc68The name of the father: Asha Harjai \ud83d\udcdeTelephone: 919711745922 \ud83d\udcdeTelephone: 919650698970 \ud83c\udfd8\ufe0fAdres: S/O Joginder Kumar Harjai,80/5 -A,Malviya NagarNEW DELHI,South Delhi,Delhi,110017 \ud83c\udfd8\ufe0fAdres: S/O Joginder Kumar Harjai,80/5 -A,Malviya Nagar NEW DELHI,South",
+      "active": true,
+      "created_at": "2025-09-25T03:07:12.654746"
+    },
+    {
+      "id": 5,
+      "username": "rohan_modz_papa",
+      "mobile_number": "8084667708",
+      "mobile_details": "No details available.",
+      "active": true,
+      "created_at": "2025-09-25T03:37:04.554919"
+    },
+    {
+      "id": 6,
+      "username": "abhishek71599",
+      "mobile_number": "8847578085",
+      "mobile_details": "No details available",
+      "active": true,
+      "created_at": "2025-09-25T04:04:40.898895"
+    },
+    {
+      "id": 7,
+      "username": "Omkarpatil0801",
+      "mobile_number": "9820720890",
+      "mobile_details": "No data available for this number",
+      "active": true,
+      "created_at": "2025-09-25T08:31:01.109772"
+    },
+    {
+      "id": 8,
+      "username": "CT_1752",
+      "mobile_number": "9694558325",
+      "mobile_details": "No Data available for user number",
+      "active": true,
+      "created_at": "2025-09-25T08:49:03.676992"
+    },
+    {
+      "id": 9,
+      "username": "Uj_mahra",
+      "mobile_number": "8267820107",
+      "mobile_details": "\ud83d\udcdeTelephone:  918267820107\n\ud83c\udfd8\ufe0fAdres:  S/O Chandan Singh Mehta,A/21Roorkee,Adarsh Shivaji Nagar PO-Milap Nagar,RoorkeeRoorkeeHaridwar,Uttarakhand,247667\n\ud83d\udc64Full name:  Chandan Singh Mehta \n\ud83d\udc68The name of the father:  Kuldip Mehta\n\ud83d\udcd6Passport number:  330215870265\n\ud83d\uddfa\ufe0f Region:  JIO UPW\n\n\ud83d\udcdeTelephone:  918077955456\n\ud83d\udcdeTelephone:  919149354749\n\ud83d\udcdeTelephone:  918267820107\n\ud83c\udfd8\ufe0fAdres:  S/O Laxman Singh Mahara,C-25Toda Kalyanpur,Durga colony,JalalpurAhatRoorkeeHaridwar,Uttarakhand,247664 \n\ud83c\udfd8\ufe0fAdres:  C-25, Durga colony Jalalpur Ahat,Haridwar Toda Kalyanpur Roorkee,Uttarakhand,247664\n\ud83c\udfd8\ufe0fAdres:  S/O Laxman Singh Mahara,C-25, Durga colony Jalalpur Ahat,Haridwar Toda Kalyanpur Roorkee,Uttarakhand,247664\n\ud83c\udccfDocument number:  460502900902\n\ud83d\udc64Full name:  Laxman Singh Mahara\n\ud83d\udc68The name of the father:  Anuj Singh Mahara\n\ud83d\uddfa\ufe0f Region:  AIRTEL UPW;Airtel UP West;JIO UPW",
+      "active": true,
+      "created_at": "2025-09-25T09:51:45.612885"
+    },
+    {
+      "id": 10,
+      "username": "AIRAGIRLGAMER",
+      "mobile_number": "7596239653",
+      "mobile_details": "Sim details are not available for selected username.",
+      "active": true,
+      "created_at": "2025-09-25T09:59:51.559243"
+    },
+    {
+      "id": 11,
+      "username": "Promotermithu",
+      "mobile_number": "7855825922",
+      "mobile_details": "No details available",
+      "active": true,
+      "created_at": "2025-09-25T12:09:58.392981"
+    },
+    {
+      "id": 12,
+      "username": "Hamla_achanak_hua",
+      "mobile_number": "7031767431(userid)",
+      "mobile_details": "Only user id (7031767431) is available for the selected user",
+      "active": true,
+      "created_at": "2025-09-25T13:46:35.939126"
+    },
+    {
+      "id": 13,
+      "username": "GROOT_126",
+      "mobile_number": "6532955223 ( only user id is available for this user)",
+      "mobile_details": "No details available as number not listed.",
+      "active": true,
+      "created_at": "2025-09-26T04:42:01.590681"
+    },
+    {
+      "id": 14,
+      "username": "Civil_Sage",
+      "mobile_number": "8877175964",
+      "mobile_details": "\ud83d\udcdeTelephone:  918709596386\n\ud83d\udcdeTelephone:  918579094070\n\ud83d\udcdeTelephone:  919693373390\n\ud83d\udcdeTelephone:  919852017322\n\ud83d\udcdeTelephone:  918877175964\n\ud83c\udfd8\ufe0fAdres:  Naya Tola Daharia Naya Tola Daharia Katihar,NA,Katihar,Purnea Katihar,NA,Bihar,854103\n\ud83c\udfd8\ufe0fAdres:  Naya Tola,Daheria,Katihar Bihar,Daharia,Katihar,Katihar,Bihar,854103\n\ud83c\udfd8\ufe0fAdres:  s/o dinesh anand gupta,daharia,naya tola,naya tola daheria,daharia,katihar,Bihar,854103\n\ud83c\udccfDocument number:  607304315894\n\ud83d\udc64Full name:  dinesh anand gupta \n\ud83d\udc68The name of the father:  Rohit Kumar Gupta\n\ud83d\uddfa\ufe0f Region:  BIHAR JIO;AIRTEL BHR&JHR;JIO BHR&JHR",
+      "active": true,
+      "created_at": "2025-09-26T04:46:10.216947"
+    },
+    {
+      "id": 15,
+      "username": "oedifuw",
+      "mobile_number": "8307166176 (only userid is available for the selected username)",
+      "mobile_details": "No details are available as number not available.",
+      "active": true,
+      "created_at": "2025-09-26T11:44:37.601213"
+    },
+    {
+      "id": 16,
+      "username": "ar_er64",
+      "mobile_number": "5530107780(userid)",
+      "mobile_details": "No details available \nError - number not available",
+      "active": true,
+      "created_at": "2025-09-26T11:53:52.872134"
+    },
+    {
+      "id": 17,
+      "username": "kizagan00",
+      "mobile_number": "7881377885 (userid)",
+      "mobile_details": "Only userid is available for this number",
+      "active": true,
+      "created_at": "2025-09-26T12:02:34.970388"
+    },
+    {
+      "id": 18,
+      "username": "Trusted_bolte2",
+      "mobile_number": "8287642214",
+      "mobile_details": "\ud83d\udcdeTelephone:  919546910217\n\ud83d\udcdeTelephone:  918084111186\n\ud83d\udcdeTelephone:  919835731319\n\ud83d\udcdeTelephone:  830572784033\n\ud83d\udcdeTelephone:  918287642214\n\ud83c\udfd8\ufe0fAdres:  2087,Bhorgarh,Block I,Narela,Delhi North,North West,Delhi,110040\n\ud83c\udfd8\ufe0fAdres:  ward 03,gram hat sonari post kakwara,kakwara,thana banka kakwara,Kakwara,Banka,Bihar,813118\n\ud83c\udfd8\ufe0fAdres:  BIHAR JIO;Delhi Jio;JIO BHR&JHR\n\ud83d\udc64Full name:  Prasadi Das \n\ud83d\uddfa\ufe0f Region:  Kundan Kumar",
+      "active": true,
+      "created_at": "2025-09-26T15:08:14.240860"
+    },
+    {
+      "id": 19,
+      "username": "ISHANTALWAYSOPP",
+      "mobile_number": "8764411136",
+      "mobile_details": "Only number is available for this username.",
+      "active": true,
+      "created_at": "2025-09-26T15:18:38.790654"
+    },
+    {
+      "id": 20,
+      "username": "itzdhruv",
+      "mobile_number": "8369418313",
+      "mobile_details": "Details will be soon added for non-result numbers.",
+      "active": true,
+      "created_at": "2025-09-27T06:22:22.647375"
+    },
+    {
+      "id": 21,
+      "username": "@devsuti",
+      "mobile_number": "No details available for this username. ( Balance will be refunded soon)",
+      "mobile_details": "Nothing available as per requested.",
+      "active": true,
+      "created_at": "2025-09-27T16:23:47.624997"
+    },
+    {
+      "id": 22,
+      "username": "cryptbuye",
+      "mobile_number": "7386641693",
+      "mobile_details": "Only mobile number is available.",
+      "active": true,
+      "created_at": "2025-09-27T16:25:15.743820"
+    },
+    {
+      "id": 23,
+      "username": "Numerasmshelp",
+      "mobile_number": "No details available for this username. ( Balance will be refunded soon)",
+      "mobile_details": "Nothing to show.",
+      "active": true,
+      "created_at": "2025-09-27T16:29:40.900247"
+    },
+    {
+      "id": 24,
+      "username": "ITS_ATUL07",
+      "mobile_number": "9354960397",
+      "mobile_details": "\ud83d\udcdeTelephone:  919654318115\n\ud83d\udcdeTelephone:  918851115484\n\ud83d\udcdeTelephone:  918587825406\n\ud83d\udcdeTelephone:  919354960397\n\ud83c\udfd8\ufe0fAdres:  S/O Pokh Pal,A-744 SHYAM COLONY BUDH VIHARPHASE-2,Sultanpuri C BlockNorth West Delhi,Delhi,110086\n\ud83c\udfd8\ufe0fAdres:  S/O Pokh Pal,A-744 SHYAM COLONY BUDH VIHAR PHASE-2,Sultanpuri C Block North West Delhi,Delhi,110086\n\ud83d\udc64Full name:  Pokh Pal\n\ud83d\udc68The name of the father:  Nitin Kumar\n\ud83d\uddfa\ufe0f Region:  JIO DELHI",
+      "active": true,
+      "created_at": "2025-09-28T03:33:48.554254"
+    },
+    {
+      "id": 25,
+      "username": "pantherX_1739",
+      "mobile_number": "8080244238",
+      "mobile_details": "\ud83d\udd0dNo details available for now but we promise it will be added soon \ud83d\ude42\ud83d\ude42",
+      "active": true,
+      "created_at": "2025-09-28T03:56:11.568199"
+    }
+  ],
+  "valid_utrs": [
+    {
+      "id": 1,
+      "utr": "453983442711",
+      "description": "Valid UTR for demo deposits",
+      "active": true,
+      "created_at": "2025-09-23T08:05:00.000000"
+    }
+  ],
+  "custom_message": "\ud83e\udd16SERVER IS BEING RESTARTED . SO, YOU HAVE TO WAIT FOR SOMETIME\nFOR SEARCH \ud83d\udd0d.\n\n\ud83d\ude4fTHANKS FOR PATIENCE \ud83d\ude4f"
+}
