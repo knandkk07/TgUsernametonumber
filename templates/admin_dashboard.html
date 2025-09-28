@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Control Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+
+        .header {
+            background: rgba(30, 30, 46, 0.95);
+            border-bottom: 2px solid rgba(64, 224, 208, 0.3);
+            padding: 20px 30px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #40e0d0 0%, #ff6b6b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logout-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: rgba(30, 30, 46, 0.8);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #40e0d0;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .tabs-container {
+            background: rgba(30, 30, 46, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .tabs {
+            display: flex;
+            background: rgba(42, 42, 74, 0.5);
+            border-bottom: 1px solid rgba(64, 224, 208, 0.3);
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            color: #40e0d0;
+            background: rgba(64, 224, 208, 0.1);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .add-btn {
+            background: linear-gradient(135deg, #40e0d0 0%, #7b68ee 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .add-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(64, 224, 208, 0.4);
+        }
+
+        .table-container {
+            background: rgba(42, 42, 74, 0.3);
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(64, 224, 208, 0.2);
+        }
+
+        th {
+            background: rgba(64, 224, 208, 0.1);
+            color: #40e0d0;
+            font-weight: 700;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .edit-btn {
+            background: #fbbf24;
+            color: #1f2937;
+        }
+
+        .delete-btn {
+            background: #ef4444;
+            color: white;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(30, 30, 46, 0.95);
+            border: 2px solid rgba(64, 224, 208, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            color: #40e0d0;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(42, 42, 74, 0.8);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            border-radius: 8px;
+            color: #e2e8f0;
+            font-size: 14px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #40e0d0;
+            box-shadow: 0 0 10px rgba(64, 224, 208, 0.3);
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .submit-btn {
+            flex: 1;
+            background: linear-gradient(135deg, #40e0d0 0%, #7b68ee 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .cancel-btn {
+            flex: 1;
+            background: rgba(107, 114, 128, 0.5);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 1001;
+            animation: slideIn 0.3s ease;
+        }
+
+        .notification-success {
+            background: #10b981;
+        }
+
+        .notification-error {
+            background: #ef4444;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        .code-display {
+            font-family: 'Courier New', monospace;
+            background: rgba(64, 224, 208, 0.1);
+            padding: 5px 8px;
+            border-radius: 4px;
+            color: #40e0d0;
+            font-weight: 600;
+        }
+
+        .balance-amount {
+            color: #10b981;
+            font-weight: 700;
+        }
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .status-inactive {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .section-header {
+                flex-direction: column;
+                gap: 15px;
+                align-items: stretch;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🛡️ Admin Control Panel</h1>
+        <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <div class="container">
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalUsers">0</div>
+                <div class="stat-label">Total Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalUsernames">0</div>
+                <div class="stat-label">Demo Usernames</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalUtrs">0</div>
+                <div class="stat-label">Valid UTRs</div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('users', this)">👥 Users</button>
+                <button class="tab" onclick="switchTab('usernames', this)">📱 Demo Usernames</button>
+                <button class="tab" onclick="switchTab('searched', this)">🔍 Searched Usernames</button>
+                <button class="tab" onclick="switchTab('utrs', this)">🏦 UTRs</button>
+                <button class="tab" onclick="switchTab('message', this)">💬 Custom Message</button>
+            </div>
+
+            <!-- Users Tab -->
+            <div id="users" class="tab-content active">
+                <div class="section-header">
+                    <h2>🔐 User Hash Codes</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Hash Code</th>
+                                <th>Balance</th>
+                                <th>Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Usernames Tab -->
+            <div id="usernames" class="tab-content">
+                <div class="section-header">
+                    <h2>📱 Demo Usernames</h2>
+                    <button class="add-btn" onclick="showAddModal('usernames')">➕ Add Username</button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Mobile Number</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usernamesTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Searched Usernames Tab -->
+            <div id="searched" class="tab-content">
+                <div class="section-header">
+                    <h2>🔍 Searched Usernames (Not Found)</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Searched By</th>
+                                <th>Searched At</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="searchedUsernamesTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- UTRs Tab -->
+            <div id="utrs" class="tab-content">
+                <div class="section-header">
+                    <h2>🏦 Valid UTRs</h2>
+                    <button class="add-btn" onclick="showAddModal('utrs')">➕ Add UTR</button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>UTR Number</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="utrsTable">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Custom Message Tab -->
+            <div id="message" class="tab-content">
+                <div class="section-header">
+                    <h2>💬 Custom Search Message</h2>
+                </div>
+                <div style="background: rgba(42, 42, 74, 0.3); border-radius: 10px; padding: 30px;">
+                    <div class="form-group">
+                        <label class="form-label" style="color: #40e0d0; font-weight: 600; margin-bottom: 15px; display: block;">
+                            <span style="margin-right: 8px;">📝</span>
+                            Message shown when username is not found:
+                        </label>
+                        <textarea id="customMessageText" class="form-input" rows="4" placeholder="Enter custom message for users when username is not found" style="width: 100%; padding: 15px; background: rgba(42, 42, 74, 0.8); border: 1px solid rgba(64, 224, 208, 0.3); border-radius: 8px; color: #e2e8f0; font-size: 16px; resize: vertical; min-height: 120px;"></textarea>
+                    </div>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <button onclick="saveCustomMessage()" class="submit-btn" style="background: linear-gradient(135deg, #40e0d0 0%, #7b68ee 100%); color: white; border: none; border-radius: 8px; padding: 12px 30px; font-weight: 600; cursor: pointer; flex: 1;">
+                            💾 Save Message
+                        </button>
+                        <button onclick="loadCustomMessage()" class="cancel-btn" style="background: rgba(107, 114, 128, 0.5); color: white; border: none; border-radius: 8px; padding: 12px 30px; font-weight: 600; cursor: pointer; flex: 1;">
+                            🔄 Reset to Current
+                        </button>
+                    </div>
+                    <div style="background: rgba(64, 224, 208, 0.1); border: 1px solid rgba(64, 224, 208, 0.3); border-radius: 8px; padding: 15px; margin-top: 20px; color: #94a3b8; font-size: 14px;">
+                        <strong style="color: #40e0d0;">💡 Note:</strong> This message will be shown to all users when they search for a username that is not available in the database. Make sure to keep it user-friendly and informative.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Add Item</h3>
+            <form id="modalForm" onsubmit="submitForm(event)">
+                <!-- Form fields will be dynamically inserted here -->
+            </form>
+            <div class="modal-buttons">
+                <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+                <button type="button" class="submit-btn" onclick="submitForm()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/admin.js"></script>
+</body>
+</html>
